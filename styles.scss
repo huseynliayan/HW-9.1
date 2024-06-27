@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "lato";
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.sectionFirst {
+  background: linear-gradient(
+      90deg,
+      rgba(213, 32, 71, 0.8) 0%,
+      rgba(215, 34, 67, 0.8) 0.01%,
+      rgba(229, 50, 43, 0.8) 21.35%,
+      rgba(236, 59, 30, 0.8) 51.55%,
+      rgba(236, 59, 30, 0.8) 51.56%,
+      rgba(236, 59, 30, 0.8) 53.65%,
+      rgba(236, 58, 31, 0.8) 77.07%,
+      rgba(236, 58, 31, 0.8) 77.08%,
+      rgba(237, 60, 29, 0.8) 97.4%,
+      rgba(237, 60, 29, 0.8) 99.97%,
+      rgba(237, 60, 29, 0.8) 99.98%,
+      rgba(237, 60, 28, 0.8) 99.99%,
+      rgba(238, 61, 27, 0.8) 100%
+    ),
+    url("./Rectangle 3 (1).svg");
+  background-size: cover;
+  .divTop {
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      padding: 20px 100px;
+      &Left {
+        display: flex;
+        align-items: center;
+      }
+      &Right {
+        display: flex;
+        align-items: center;
+        img,
+        span,
+        button {
+          margin-left: 10px;
+        }
+        button {
+          background: transparent;
+          border: white solid 1px;
+          border-radius: 4px;
+          padding: 10px 20px;
+          color: white;
+        }
+      }
+
+      &Center {
+        span {
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+
+  .divCenter {
+    color: white;
+    .center1 {
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 86.4px;
+      letter-spacing: 0.05em;
+      text-align: left;
+      padding-top: 150px;
+      padding-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .center2 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 36px;
+      text-align: center;
+      padding-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .divFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 69px;
+    button {
+      background-color: white;
+      color: red;
+      border: white solid 1px;
+      border-radius: 6px;
+      padding: 16px 53px;
+    }
+  }
+}
+
+.sectionSecond {
+  background: white;
+  .divSectionSecond {
+    display: flex;
+    flex-direction: row;
+    .divLeft {
+      &Top {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 43.2px;
+        text-align: left;
+        padding: 100px 100px 50px 100px;
+      }
+      &Center {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        text-align: justified;
+        padding: 0px 0px 30px 100px;
+      }
+      &Footer {
+        padding: 0px 0px 50px 100px;
+        button {
+          border: none;
+          color: red;
+          background: transparent;
+        }
+      }
+    }
+    .divRight {
+      position: relative;
+      &Picture {
+        padding: 80px 30px 50px 0px;
+      }
+      &Square {
+        position: absolute;
+        top: 45%;
+        left: -8%;
+      }
+    }
+  }
+}
+
+.sectionThird {
+  background: #fafafa;
+  &Header {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.2px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  &Body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 100px 100px 100px;
+    img {
+      width: calc((100vw - 300px) / 3);
+    }
+    .sectionThirdDivLeft,
+    .sectionThirdDivCenter,
+    .sectionThirdDivRight {
+      position: relative;
+      &Text {
+        background: white;
+        position: absolute;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        top: 60%;
+        left: 8%;
+        right: 8%;
+
+        .main {
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 21.6px;
+        }
+        .info {
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 18px;
+        }
+        button {
+          border: none;
+          color: red;
+          background: transparent;
+          margin-top: 10%;
+        }
+      }
+    }
+  }
+}
+
+.sectionFourth {
+  &DivTop {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.2px;
+    text-align: center;
+  }
+  &DivCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px 80px 100px 80px;
+    .sectionFourthDivCenterFirst,
+    .sectionFourthDivCenterSecond,
+    .sectionFourthDivCenterThird,
+    .sectionFourthDivCenterFourth {
+      position: relative;
+    }
+
+    .mainImage {
+      position: relative;
+      left: 25px;
+    }
+    .secondImage {
+      position: absolute;
+      top: 20px;
+      left: 45px;
+    }
+    .sectionFourthDivCenterText {
+      .mainText {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.6px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }
+      .infoText {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.sectionFifth {
+  background: #ed4c5c;
+  display: flex;
+  flex-direction: row;
+  &Left {
+    &Top {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 43.2px;
+      text-align: left;
+      color: white;
+      padding: 100px 50px 40px 10px;
+    }
+    &Center {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19.6px;
+      text-align: justified;
+      color: white;
+      padding: 10px 25px 30px 10px;
+    }
+    &Footer {
+      display: flex;
+      gap: 20px;
+      padding: 10px 0px 100px 10px;
+    }
+  }
+  &Right {
+    padding-top: 100px;
+    padding-left: 50px;
+  }
+}
+
+.sectionSixth {
+  display: flex;
+  flex-direction: row;
+  &Left {
+    &Top {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 43.2px;
+      text-align: left;
+      margin: 100px 0px 50px 50px;
+    }
+    &Center {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19.6px;
+      text-align: justified;
+      margin: 0px 50px 0px 50px;
+    }
+  }
+  &Right {
+    &Inputs {
+      margin-left: 100px;
+      margin-top: 100px;
+    }
+
+    #smallInput {
+      height: 40px;
+      width: 200px;
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+    #bigInput {
+      height: 40px;
+      width: 430px;
+      margin-bottom: 30px;
+    }
+  }
+  button {
+    height: 50px;
+    width: 140px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: #ed4c5c;
+    margin-left: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+.sectionSeventh {
+  background: #fafafa;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  &DivFirst {
+    &Top {
+      font-size: 18px;
+      line-height: 21.6px;
+      padding-bottom: 30px;
+      //text-align: center;
+    }
+    &Center {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+      padding-bottom: 100px;
+    }
+    &Footer {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.4px;
+      text-align: left;
+    }
+  }
+  &DivSecond {
+    &Top {
+      font-size: 18px;
+      line-height: 21.6px;
+      padding-bottom: 30px;
+    }
+    &Center {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 19.2px;
+      text-align: left;
+    }
+  }
+  &DivThird {
+    &Top {
+      font-size: 18px;
+      line-height: 21.6px;
+      padding-bottom: 30px;
+    }
+    &Center {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 19.2px;
+      text-align: left;
+      padding-bottom: 30px;
+    }
+    &Footer {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  &DivFourth {
+    &Top {
+      font-size: 18px;
+      line-height: 21.6px;
+      padding-bottom: 30px;
+    }
+  }
+}
